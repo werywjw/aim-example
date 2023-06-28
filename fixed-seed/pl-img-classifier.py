@@ -80,7 +80,8 @@ class ImageClassifierModel(pl.LightningModule):
 
 if __name__ == "__main__":
 
-    seeds = [47, 881, 123456789]
+    # 42 is the optimal seed for training neural networks
+    seeds = [42]
     lrs = [0.1, 0.01]
     optimizers = ['SGD', 'Adam']
 
